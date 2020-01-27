@@ -1,0 +1,197 @@
+footer{
+    position: fixed;
+    bottom: 0;
+    height: 20px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}      
+
+
+
+* {
+    padding:0;
+    box-sizing: 0;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+body{
+    background: rgb(32, 85, 182);
+}
+
+h1{
+    height: 40px;
+    background-color: rgb(32, 85, 182);;
+    color: cornsilk;
+    align-items: center;
+    padding-left: 15px ;
+    padding-bottom: 8px;
+}
+
+header{
+    height: 40px;
+    background-color: black;
+    color: cornsilk;
+    align-items: center;
+    overflow: hidden;
+}
+
+#btn-menu{
+    display: none;
+}
+
+header label{
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    padding-left: 60px;
+}
+
+.ContentContainer ul{
+background-color: mediumturquoise;
+display: flex;
+list-style:none;
+}
+
+.ContentContainer a{
+    display: block;
+    padding: 10px 20px;
+    color: papayawhip;
+    text-decoration: none;
+}
+
+.ContentContainer a:hover{
+    background: darkcyan;
+}
+
+
+   header label{
+        display: block;
+        margin: auto;
+    }
+    .ContentContainer{
+        position: absolute;
+        top: 80px;
+        left: 0px;
+        width: 3%;
+        transform: translateX(-100%);
+        transition: all 0.3s;
+    }
+    .ContentContainer ul{
+        display: block; 
+    }
+
+    #btn-menu:checked ~ .ContentContainer{
+        transform: translateX(0%);
+    }
+
+    .ContentContainer ul{ 
+        background: rgb(0, 0, 0,0.4);
+        padding: 15px, 30px;
+    }
+
+
+.AllContainers div{
+    background-color: #2C2CE8;
+    float: left;
+    width: 35%;
+    height: 35%;
+    margin: 10px 10px 10px 10px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular';
+    color: white;
+    border: 1px grey;
+    font-size: 30px;
+}
+
+
+.Exercise, .Past, .Translate, .Present{
+    float: right;
+    font-size: 25px;
+    padding: 2px 30px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover{
+    box-shadow: 0px 3px 0px white;
+}
+
+.overlay{
+    background-color: rosybrown;
+    background: rgba(0, 0, 0, 0.534);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.overlay.active{
+    visibility: visible;
+}
+
+.popup{
+    background: #f8f8f8;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.534);
+    border-radius: 3px;
+    font-family: sans-serif, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 20px;
+    transition: 0.7s ease all;
+    text-align: center;
+    width: 600px;
+    opacity: 0;
+}
+
+
+.popup .closePopup{
+font-size: 25px;
+line-height: 16px;
+display: block;
+text-align: right;
+color: black;
+text-decoration: none;
+}
+
+.popup .closePopup:hover{
+    color: blue;
+}
+
+.popup h3{
+ font-size: 50px;
+ font-weight: 600;
+ margin-bottom: 10px;
+}
+
+.sound {
+    width: 100%;
+    margin-bottom: 20px;
+    line-height: 52px;
+    font-size: 30px;
+    text-align: center;
+    border: 1px solid #b4b4b4;
+    border-radius: 2px;
+}
+
+.sound:hover{
+background-color: rgba(14, 26, 199, 0.336);
+}
+
+.popup.active{
+    opacity: 1;
+    transform:scale(1);
+}
+
+.AllContainers button{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
